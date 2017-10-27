@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>实战项目一</title>
+
+		<!--ie8开启标准渲染模式-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+		<!--配置视窗-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+
+		<!--fontAwsome-->
+		<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+		<!--animate-->
+		<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css"/>
+
+		<!--引入自定义的css-->
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+
+		<!--导入jQuery-->
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<!--bootstrap导入-->
+		<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+		<!--wow.min.js-->
+		<script src="wow.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<!--单页导航插件-->
+		<script src="jquery.nav.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('#nav').onePageNav({
+					filter: ':not(.exception)'
+				});
+
+				new WOW().init();
+
+				$('.navbar-collapse a').click(function(){
+					$('.navbar-collapse').collapse('hide');
+				});
+			});
+		</script>
+	</head>
+	<body>
+
+		<!--导航-->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<!--小屏幕导航按钮和logo-->
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand">我的首页</a>
+				</div>
+
+				<!--导航-->
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right" id="nav">
+						<li><a href="#home">首页</a></li>
+						<li><a href="#bbs">论坛</a></li>
+						<li><a href="#html5">前端开发</a></li>
+						<li><a href="#lesson">最新学习</a></li>
+						<li><a href="#contact">联系我们</a></li>
+						<li><a href="#footer">提意见</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--导航-->
+
+		<!--HOME-->
+		<section id="home">
+			<div class="lvjing">
+				<div class="container">
+					<div class="row wow bounce">
+						<div class="col-md-1"></div>
+
+						<div class="col-md-10">
+							<h1>业精于勤，荒于嬉；行成于思，毁于随</h1>
+							<p>力争能够实现bootstrap上手就能开发，而且质量还不错！做界面轻松的应对，而不是很吃力。
+								加油，嘿嘿~！
+							</p>
+							<img class="img-responsive" src="pic01.jpg"/>
+						</div>
+
+						<div class="col-md-1"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--HOME-->
+
+		<!--bbs-->
+		<section id="bbs" class="animated flipInY">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<a href="dilog.html">
+							<div class="col-md-8 col-md-push-2">
+							<img class="img-responsive" src="pic01_1.jpg"/>
+							</div>
+							<div class="cl"></div>
+							<h2>软件论坛</h2>
+							<p>技术交流开发技术交流开发技术交流开发</p>
+						</a>
+					</div>
+
+					<div class="col-md-4">
+						<a href="dilog.html">
+							<div class="col-md-8 col-md-push-2">
+							<img class="img-responsive" src="pic02.jpg"/>
+							</div>
+							<div class="cl"></div>
+							<h2>软件论坛</h2>
+							<p>技术交流开发技术交流开发技术交流开发</p>
+						</a>
+					</div>
+
+					<div class="col-md-4">
+						<a href="dilog.html">
+							<div class="col-md-8 col-md-push-2">
+							<img class="img-responsive" src="pic03.jpg"/>
+							</div>
+							<div class="cl"></div>
+							<h2>软件论坛</h2>
+							<p>技术交流开发技术交流开发技术交流开发</p>
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!--bbs-->
+
+		<!--html5-->
+		<section id="html5">
+			<div class="container">
+				<div class="col-md-6">
+					<h2>html5前端展示</h2>
+					<p>轻松实现跨平台和全栈开发</p>
+					<p><span class="glyphicon glyphicon-gift iconmark"></span> 使用bootstrap轻松实现设备的自适应，哇咔咔~！</p>
+					<p><span class="glyphicon glyphicon-gift iconmark"></span> 清晰明了的寓意，更高的可读性，更利于页面的维护</p>
+				</div>
+
+				<div class="col-md-6">
+					<img class="img-responsive" src="pic01.jpg"/>
+				</div>
+			</div>
+		</section>
+		<!--html5-->
+
+		<!--bootstrap-->
+		<section id="bootstrap">
+			<div class="container">
+
+				<div class="col-md-6">
+					<img class="img-responsive" src="pic01.jpg"/>
+				</div>
+
+				<div class="col-md-6">
+					<h2>bootstarp前端展示</h2>
+					<p>轻松实现跨平台和全栈开发</p>
+					<p><span class="glyphicon glyphicon-gift iconmark"></span> 使用bootstrap轻松实现设备的自适应，哇咔咔~！</p>
+					<p><span class="glyphicon glyphicon-gift iconmark"></span> 清晰明了的寓意，更高的可读性，更利于页面的维护</p>
+				</div>
+			</div>
+		</section>
+		<!--bootstrap-->
+
+		<!--学习课程-->
+		<section id="lesson">
+			<div class="container">
+				<div class="col-md-12">
+						<h2>最新作品</h2>
+					</div>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="cell">
+							<img src="HBuilder.png"/>
+							<div class="cl"></div>
+							<a href="dilog.html" target="_blank"><p>加入课程</p></a>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="cell">
+							<img src="HBuilder.png"/>
+							<div class="cl"></div>
+							<a href="dilog.html" target="_blank"><p>加入课程</p></a>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="cell">
+							<img src="HBuilder.png"/>
+							<div class="cl"></div>
+							<a href="dilog.html" target="_blank"><p>加入课程</p></a>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="cell">
+							<img src="HBuilder.png"/>
+							<div class="cl"></div>
+							<a href="dilog.html" target="_blank"><p>加入课程</p></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--学习课程-->
+
+		<!--联系我们-->
+		<section id="contact">
+			<div class="container">
+				<div class="col-md-6">
+					<h2>html5前端展示</h2>
+					<p>轻松实现跨平台和全栈开发</p>
+					<p><span class="glyphicon glyphicon-gift iconmark"></span> 使用bootstrap轻松实现设备的自适应，哇咔咔~！</p>
+					<p><span class="glyphicon glyphicon-gift iconmark"></span> 清晰明了的寓意，更高的可读性，更利于页面的维护</p>
+					<button class="btn btn-default"><span class="glyphicon glyphicon-gift"></span>  联系我</button>
+					<button class="btn btn-default" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-gift"></span>  联系我</button>
+				</div>
+
+				<div class="col-md-6">
+					<img class="img-responsive" src="pic01.jpg"/>
+				</div>
+			</div>
+		</section>
+		<!--联系我们-->
+
+		<!--联系我们的框-->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModelLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel">标题</h4>
+					</div>
+
+					<div class="modal-body">
+						<section id="bootstrap">
+							<div class="container">
+								<img class="img-responsive" src="pic01.jpg"/>
+								<h2>模态前端展示</h2>
+								<p>轻松实现跨平台和全栈开发</p>
+								<p><span class="glyphicon glyphicon-gift iconmark"></span> 使用bootstrap轻松实现设备的自适应，哇咔咔~！</p>
+								<p><span class="glyphicon glyphicon-gift iconmark"></span> 清晰明了的寓意，更高的可读性，更利于页面的维护</p>
+							</div>
+						</section>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-primary">提交更改</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--联系我们的框-->
+
+		<!--底部-->
+		<section id="footer">
+			<div class="container">
+				<div class="col-md-6">
+					<h2>简介</h2>
+					<p>我们是一家科技企业，致力于打造最尖端的web网站。我们是一家科技企业，致力于打造最尖端的web网站。
+					我们是一家科技企业，致力于打造最尖端的web网站。我们是一家科技企业，致力于打造最尖端的web网站。
+					我们是一家科技企业，致力于打造最尖端的web网站。</p>
+					<p class="pAddress"><span class="glyphicon glyphicon-home"> 地址：浙江省杭州市江干区xx</span></p>
+					<p class="pAddress"><span class="glyphicon glyphicon-phone"> 电话：0517-66665555</span></p>
+					<p class="pAddress"><span class="glyphicon glyphicon-paperclip"> 邮箱：1076976262@qq.com</span></p>
+				</div>
+				<div class="col-md-6">
+
+					<div class="divright">
+						<div class="form-inline form-group">
+							<div class="input-group">
+								<span class="input-group-addon">UserName:</span>
+								<input class="form-control" type="text" name="" id="" value="" placeholder="您的姓名"/>
+							</div>
+
+							<div class="input-group">
+								<span class="input-group-addon">Email:</span>
+								<input class="form-control" type="text" name="" id="" value="" placeholder="您的邮箱"/>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<input class="form-control" type="text" name="" id="" value="" placeholder="标题"/>
+						</div>
+
+						<div class="form-group">
+							<textarea class="form-control" name="" rows="6" cols="" placeholder="您的意见"></textarea>
+						</div>
+
+						<div class="form-group">
+							<button class="btn btn-primary">提交</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!--底部-->
+
+		<!--版权-->
+		<div class="public">
+			<p>2016.10.10</p>
+		</div>
+		<!--版权-->
+
+	</body>
+</html>
