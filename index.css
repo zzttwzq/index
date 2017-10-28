@@ -6,7 +6,6 @@ body{
  	background: #fff;
  	font-family: "微软雅黑";
  	font-size: 16px;
- 	/*color: #fff;*/
 }
 
 .iconmark{
@@ -16,9 +15,8 @@ body{
 	line-height: 30px;
 	border-radius: 50%;
 	background: rgb(64, 194, 177);
-	margin: 10px 10px;
+	margin: 10px 10p
 }
-
 
 /*导航*/
 .navbar-default {
@@ -40,7 +38,7 @@ body{
 	font-weight: bold;
 	color: #666;
 	height: 70px;
-	line-height: 35px;	
+	line-height: 35px;
 }
 
 .navbar-default .navbar-toggle{
@@ -61,10 +59,10 @@ body{
     background: -o-linear-gradient(#3aa89d, #a0d8cd); /* Opera 11.1 - 12.0 */
     background: -moz-linear-gradient(#3aa89d, #a0d8cd); /* Firefox 3.6 - 15 */
     background: linear-gradient(#3aa89d, #a0d8cd); /* 标准的语法 */
-	
-	width: 100%;	
+
+	width: 100%;
 	margin-top: 70px;
-	
+
 	text-align: center;
 }
 
@@ -85,7 +83,7 @@ body{
 
 #home p{
 	font-weight: 400;
-	line-height: 35px;
+	line-height: 10px;
 	color: #fff;
 }
 
@@ -111,8 +109,9 @@ body{
 }
 
 #bbs p{
-	text-align: center;
-	font-size: 17px;	
+  text-align: center;
+  font-size: 15px;
+  color: #888;
 }
 
 #bbs .col-md-4{
@@ -199,7 +198,7 @@ body{
 	font-size: 13px;
 	border-radius: 4px;
 	border: 1px solid greenyellow;
-	
+
 	vertical-align: bottom;
 	/*background: #6cdde5;*/
 }
